@@ -12,7 +12,10 @@ const comment = `/* eslint-disable */
 `
 
 export default async function main() {
-  const [url] = argv._;
+  let [url] = argv._;
+  if(url && url.startsWith('//')) {
+    url = `https:${url}`;
+  }
   const target = argv.target || './icons.ts';
   if (!url) {
     logger.error('请指定 iconfont 的 url 地址');
