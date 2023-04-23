@@ -15,6 +15,10 @@
     "build": "esbuild  src/cli.ts --bundle --platform=node --outfile=dist/iconfont-to-esm.cjs",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicoKam/iconfont-to-esm"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
