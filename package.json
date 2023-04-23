@@ -4,12 +4,19 @@
   "type": "module",
   "description": "",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "iconfont-to-esm": "dist/iconfont-to-esm.cjs"
+  },
   "scripts": {
     "start": "ts-node -T src/cli.ts",
-    "build": "esbuild  src/cli.ts --bundle --platform=node --outfile=dist/iconfont-to-esm.cjs"
+    "build": "esbuild  src/cli.ts --bundle --platform=node --outfile=dist/iconfont-to-esm.cjs",
+    "prepublishOnly": "npm run build"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "acorn": "^8.8.2",
     "acorn-walk": "^8.2.0",
