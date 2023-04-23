@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+dist
+# intellij/webstorm stuff
+
+.idea/
+.pnpm-debug*
+packages
+pnpm-lock.yaml
+.dumi/tmp
+.dumi/tmp-production
+/docs-dist
