@@ -26,12 +26,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@types/inquirer": "^9.0.3",
     "acorn": "^8.8.2",
     "acorn-walk": "^8.2.0",
     "chalk": "^5.2.0",
     "change-case": "^4.1.2",
     "got": "^12.6.0",
     "htmlparser2": "^8.0.2",
+    "inquirer": "^9.1.5",
     "minimist": "^1.2.8"
   },
   "devDependencies": {
