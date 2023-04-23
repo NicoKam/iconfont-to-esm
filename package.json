@@ -5,6 +5,7 @@
   "description": "",
   "main": "dist/iconfont-to-esm.cjs",
   "files": [
+    "bin",
     "dist"
   ],
   "bin": {
